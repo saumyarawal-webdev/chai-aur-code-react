@@ -1,13 +1,14 @@
 
-
+import { useState } from 'react'
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
+  const [length, setLength] = useState(8)
+  const [numberAllowed,setNumberAllowed]=useState(false)
+  const [numberAllowed,setCharAllowed]=useState(false);
   return (
     <>
-    <h1>Password Generator</h1>
+    <h1 className="text-4xl text-center">Password Generator</h1>
     </>
   )
 }
