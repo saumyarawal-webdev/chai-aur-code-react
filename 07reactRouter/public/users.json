@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "username": "john_doe",
+            "followers": 150
+        },
+        {
+            "username": "jane_smith",
+            "followers": 200
+        },
+        {
+            "username": "mike_jones",
+            "followers": 300
+        }
+    ]
+}

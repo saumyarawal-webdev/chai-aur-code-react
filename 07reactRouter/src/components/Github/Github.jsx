@@ -1,16 +1,14 @@
-// import React from 'react'
 
-import { useEffect } from "react"
+import { useLoaderData } from 'react-router-dom';
 
 function Github() {
-    useEffect(()=>{
-        fetch('https://api.github.com/user/hiteshchodhary').then(response=>response.json()).then(data=>{
-            console.log(data)
-        })
-    },[]);
+  const followers = useLoaderData();
+
   return (
-    <div className='text-center m-4 bg-red-700 text-white p-4 text-3xl'>Github Followers:</div>
-  )
+    <div className='text-center m-4 bg-red-700 text-white p-4 text-3xl'>
+      Github Followers: {followers}
+    </div>
+  );
 }
 
-export default Github
+export default Github;
