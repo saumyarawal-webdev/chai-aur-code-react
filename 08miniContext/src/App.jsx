@@ -1,17 +1,16 @@
-
-import UserContextProvider from './context/UserContextProvider'
 import './App.css'
+import Profile from './components/Profile'
+import Login from './components/Login'
+import UserContextProvider from './context/UserContextProvider'
 
 function App() {
-
+ 
   return (
-    <>
-    
-<UserContextProvider>
-<h1>React with Chai</h1>
-</UserContextProvider>
-   
-    </>
+    <UserContextProvider>
+     <h1>React with Coffee</h1>
+     <Login/>
+     <Profile/>
+    </UserContextProvider>
   )
 }
 
